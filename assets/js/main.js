@@ -28,21 +28,21 @@ const gameStart = (hallo) => {
 
         if (hallo === computerSelection) {
             result = "tie"
-            resultCase.innerHTML = hallo + "(me)" + computerSelection + "(com)" + result
+            resultCase.innerHTML = hallo + " (me) " + computerSelection + " (com) " + result
         }
 
         else if (hallo === "stone" && computerSelection === "scissors" || hallo === "paper" && computerSelection === "stone" || hallo === "scissors" && computerSelection === "paper") {
             result = "you win"
             pointsMe++
             pointsAll.innerHTML = pointsMe + " : " + pointsCom
-            resultCase.innerHTML = hallo + "(me)" + computerSelection + "(com)" + result
+            resultCase.innerHTML = hallo + " (me) " + computerSelection + " (com) " + result
         }
 
         else {
             result = "you lost"
             pointsCom++
             pointsAll.innerHTML = pointsMe + " : " + pointsCom
-            resultCase.innerHTML = hallo + "(me)" + computerSelection + "(com)" + result
+            resultCase.innerHTML = hallo + " (me) " + computerSelection + " (com) " + result
         }
 
         if (roundsPlayed == radioValue && pointsMe > pointsCom) {

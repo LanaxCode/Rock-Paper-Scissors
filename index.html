@@ -10,45 +10,63 @@
 </head>
 
 <body>
-    <h1> Rock Paper Scissors </h1>
-
-    <div>
-        <h2> How many rounds </h2>
-        <form id="form">
-            <input type="radio" name="runden" id="five" value="5">
-            <label for="">5</label>
-            <input type="radio" name="runden" id="ten" value="10">
-            <label for="">10</label>
-            <input type="radio" name="runden" id="fiveteen" value="15">
-            <label for="">15</label>
-            <input type="radio" name="runden" id="twenty" value="20">
-            <label for="">20</label>
-
-        </form>
-        <p id="rounds"></p>
-    </div>
+    <header>
+        <h1> Rock Paper Scissors </h1>
+    </header>
+    <main>
+        <section>
 
 
-    <div>
-        <p id="pointsAll">0</p>
-    </div>
+            <div class="rounds">
+                <h2> How many rounds </h2>
+                <form id="form">
+                    <div>
+                        <input type="radio" name="runden" id="five" value="5">
+                        <label for="">5</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="runden" id="ten" value="10">
+                        <label for="">10</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="runden" id="fiveteen" value="15">
+                        <label for="">15</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="runden" id="twenty" value="20">
+                        <label for="">20</label>
+                    </div>
+                </form>
+                <p id="rounds"></p>
+            </div>
 
-    <div>
-        <p id="comchoose"></p>
 
-        <p id="resultCase">Let's Play!</p>
+            <div class="points">
+                <p class="pointlabel">User</p>
+                <p id="pointsAll">0</p>
+                <p class="pointlabel">Com</p>
+            </div>
 
-    </div>
+            <div>
+                <p id="comchoose"></p>
 
-    <div>
-        <input type="button" value="stone" id="stone" onclick="gameStart('stone')">
-        <input type="button" value="paper" id="paper" onclick="gameStart('paper')">
-        <input type="button" value="scissors" id="scissors" onclick="gameStart('scissors')">
-    </div>
+                <p id="resultCase">Let's Play!</p>
+
+            </div>
+
+            <div class="buttons">
+                <button value="stone" id="stone" onclick="gameStart('stone')">
+                    <img src="./assets/img/icons8-zeichensprache-50.png"> </button>
+                <button value="paper" id="paper" onclick="gameStart('paper')">
+                    <img src="./assets/img/icons8-ganze-hand-50.png"></button>
+                <button value="scissors" id="scissors" onclick="gameStart('scissors')"><img
+                        src="./assets/img/icons8-hand_-schere-50.png"></button>
+            </div>
 
 
-    <a href="">restart</a>
-
+            <a href="">restart</a>
+        </section>
+    </main>
 
     <script src="./assets/js/main.js"></script>
 </body>
